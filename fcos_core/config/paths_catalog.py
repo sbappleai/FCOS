@@ -7,6 +7,14 @@ import os
 class DatasetCatalog(object):
     DATA_DIR = "datasets"
     DATASETS = {
+        "toppan_merged_train": {
+            "img_dir": "merged-toppan/all",
+            "ann_file": "merged-toppan/train_all.json"
+        },
+        "toppan_merged_val": {
+            "img_dir": "merged-toppan/val-1",
+            "ann_file": "merged-toppan/val_all.json"
+        },
         "coco_2017_train": {
             "img_dir": "coco/train2017",
             "ann_file": "coco/annotations/instances_train2017.json"
